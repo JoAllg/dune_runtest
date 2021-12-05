@@ -1,0 +1,7 @@
+(library
+ (name test)
+ (inline_tests)
+ ; (libraries main) ; module that has error.ml in its folder.
+ (preprocess
+  (pps ppx_expect))
+)
